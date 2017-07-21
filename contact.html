@@ -2,43 +2,88 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width'> -->
 	 <link rel="stylesheet" type="text/css" href="reset.css">
 	 <link rel="stylesheet" type="text/css" href="contact.html">
 	 <link rel="stylesheet" type="text/css" href="portfolio.html">
-	 <link rel="stylesheet" type="text/css" href="style.css">
-	<title>Graham Lawing Contact</title>
+	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Graham Lawing About Me</title>
 </head>
 <body>
+
 <!--Your name header on first page -->
 <header>
-	<h1>Graham Lawing</h1>
+	<div class="container">
+	<div id="box1">
+		<div class="branding">
+			<h1>Graham Lawing</h1>
+		</div>
+	</div>
 	<nav>
       <ul>
-        <li><a href="index.html"> Home|</a></li>
-        <li><a href="portfolio.html"> Portfolio|</a></li>
-        <li class="current"><a href="contact.html"> Contact</a></li>
+        <li class="current"><a href="index.html"> Home</a></li>
+        <li><a href="portfolio.html"> |   Portfolio</a></li>
+        <li><a href="contact.html"> |   Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
+<body background="concrete-texture.png">
+<!-- Body -->
+
+<div id="wrap">
+	<div class="contactleft">	
+		<h1>Contact</h1>
+			<hr>
+			
+			<div class="contact">
+			<form class="Contact">
+				<div>
+					<label>Name</label><br>
+					<input type="text" placeholder="John Smith">
+				</div>
+				<div>
+				 <label>Email</label><br>
+					<input type="text" placeholder="example@gmail.com">
+				</div>
+				<div>
+				 <label>Message</label><br>
+					<textarea rows="8"></textarea>
+				</div>
+				<button class="button_1" type="submit">Submit</button>
+			</form>	
+			</div>
+	</div>
+
+<br>
+
+<div class="right">
+	<h3>Connect with Me</h3>
+		<hr>
+
+<!--Social Media Buttons-->
+<ul>
+	<form action="https://www.linkedin.com/in/graham-lawing/" target="_blank"> 
+  		<li><button type="submit"><img id="linkedin-icon" src="assets/images/Linkedin.png.png" alt="Linkedin"></button></li>
+	</form>
+
+	<form action="https://github.com/glawing42" target="_blank"> 
+  		<li><button type="submit"><img id="Github-icon" src="assets/images/Github.png.png" alt="Github"></button></li>
+	</form>
+
+	<form action="https://stackexchange.com/users/11278135/graham-lawing" target="_blank"> 
+		<li><button type="submit"><img id="Stackoverflow-icon" src="assets/images/Stackoverflow.png.png" alt="Stackoverflow"></button></li>
+	</form>
+</ul>
+</div>
+</div>
 
 
 
 
 
-
-<div id="Connect">Connect with Me</div>
-<hr>
-
-
-<img src="assets/images/Linkedin.png.png" alt="Linkedin">
-<img src="assets/images/Github.png.png" alt="GitHub">
-<img src="assets/images/Stackoverflow.png.png" alt="Stackoverflow">
-
-
-
-<footer>
+<footer id="footer">
 <p>&copy; Copyright 2017 Graham Lawing</p>
 </footer>
 
@@ -46,6 +91,3 @@
 
 </body>
 </html>
-
-
-
