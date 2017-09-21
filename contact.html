@@ -1,93 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
+
 <head>
 	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=device-width'> -->
-	 <link rel="stylesheet" type="text/css" href="reset.css">
-	 <link rel="stylesheet" type="text/css" href="contact.html">
-	 <link rel="stylesheet" type="text/css" href="portfolio.html">
-	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title>Graham Lawing About Me</title>
+	<title>About | Graham Lawing</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 
-<!--Your name header on first page -->
-<header>
-	<div class="container">
-	<div id="box1">
-		<div class="branding">
-			<h1>Graham Lawing</h1>
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Graham Lawing</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
 		</div>
-	</div>
-	<nav>
-      <ul>
-        <li class="current"><a href="index.html"> Home</a></li>
-        <li><a href="portfolio.html"> |   Portfolio</a></li>
-        <li><a href="contact.html"> |   Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+	</header>
 
-<body background="concrete-texture.png">
-<!-- Body -->
 
-<div id="wrap">
-	<div class="contactleft">	
-		<h1>Contact</h1>
-			<hr>
-			
-			<div class="contact">
-			<form class="Contact">
-				<div>
-					<label>Name</label><br>
-					<input type="text" placeholder="John Smith">
-				</div>
-				<div>
-				 <label>Email</label><br>
-					<input type="text" placeholder="example@gmail.com">
-				</div>
-				<div>
-				 <label>Message</label><br>
-					<textarea rows="8"></textarea>
-				</div>
-				<button class="button_1" type="submit">Submit</button>
-			</form>	
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
+
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="John Smith" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit" name="submit">
+			</form>
+
+		</section>
+
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+
+				<a href="https://github.com/glawing42"><img src="assets/images/Github.png" class="social" alt="GitHub" /></a>
+				<a href="https://www.linkedin.com/in/graham-lawing/"><img src="assets/images/Linkedin.png" class="social" alt="LinkedIn" /></a>
+				<a href="https://stackoverflow.com/users/8271609/graham-lawing"><img src="assets/images/Stackoverflow.png" class="social" alt="Stack Overflow" /></a>
 			</div>
+		</section>
 	</div>
 
-<br>
-
-<div class="right">
-	<h3>Connect with Me</h3>
-		<hr>
-
-<!--Social Media Buttons-->
-<ul>
-	<form action="https://www.linkedin.com/in/graham-lawing/" target="_blank"> 
-  		<li><button type="submit"><img id="linkedin-icon" src="assets/images/Linkedin.png.png" alt="Linkedin"></button></li>
-	</form>
-
-	<form action="https://github.com/glawing42" target="_blank"> 
-  		<li><button type="submit"><img id="Github-icon" src="assets/images/Github.png.png" alt="Github"></button></li>
-	</form>
-
-	<form action="https://stackexchange.com/users/11278135/graham-lawing" target="_blank"> 
-		<li><button type="submit"><img id="Stackoverflow-icon" src="assets/images/Stackoverflow.png.png" alt="Stackoverflow"></button></li>
-	</form>
-</ul>
-</div>
-</div>
-
-
-
-
-
-<footer id="footer">
-<p>&copy; Copyright 2017 Graham Lawing</p>
-</footer>
-
-
-
+	<footer>
+		<div class="container">
+			Copyright &copy; 2017 Graham Lawing
+		</div>
+	</footer>
 </body>
+
 </html>
